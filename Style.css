@@ -413,6 +413,9 @@
     flex-wrap: wrap;
 }
 
+.why-row:nth-child(even){
+    flex-direction: row-reverse;
+}
 
 .why-img{
     flex: 1;
@@ -713,3 +716,4 @@
     background:#d4a017;
 
 }
+
