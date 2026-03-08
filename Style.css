@@ -1,0 +1,715 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: black;
+    height: 147px;
+}
+.logo img {
+    width: 150px;
+    height: auto;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    display: block;
+}
+.menu li a{
+    text-decoration: none;
+    color: bisque;
+    font-size: 30px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+}
+.btn{
+    background:goldenrod;
+    color: bisque;
+    padding:8px 18px;
+    text-decoration:none;
+    border-radius:20px;
+    font-size: 20px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+/*about-Home Section*/
+.abtimg img{
+    float: left;
+    width: 500px;
+    height: 600px;
+    justify-content: center;
+    margin: 10px;
+}
+.abt{
+    padding: 20px;
+    background-color: #ab4e52;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+.about-container{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.about-img img{
+    width:450px;
+    float: left;
+    height: auto;
+}
+
+.about-cont{
+    width:900px;
+    float: right;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+    text-align: center;
+}
+
+/*Services-Home Section*/
+.services{
+    background-color: #fafad2;
+    padding:40px 30px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.service-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.service-box{
+    flex: 0 0 22%;
+    margin:10px;
+    padding:20px;
+    background:#000;
+    color:#D4AF37;
+    border-radius:10px;
+    font-size:16px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+    box-sizing:border-box;
+}
+.service-box:hover{
+    background-color:#111;
+    transform: translateY(-5px);
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(20, 20, 20, 0.853)
+}
+.service-box img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.service-box h4{
+    margin-bottom:10px;
+}
+
+.service-box p{
+    font-size:14px;
+    color:#ccc;
+}
+.team{
+    padding:20px;
+    text-align:center;
+    background-color:#b78727;
+    font-size: 20px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.team-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+.team-member{
+    flex: 0 0 22%;   /* 4 per row */
+    background:#000;
+    padding:20px;
+    border-radius:20%;
+    box-sizing:border-box;
+    transition:0.3s ease;
+}
+.team-member:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(10, 10, 10, 0.912);
+}
+
+.team-member img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:20%;
+}
+
+.team-member h4{
+    margin-top:15px;
+    color:#D4AF37;
+}
+
+.team-member p{
+    color:#ccc;
+    font-size:14px;
+}
+.testimonial{
+    padding:80px 60px;
+    background:#faf0be;
+    color:#10100f;
+    text-align:center;
+}
+
+.testimonial-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+.testimonial-box{
+    width:300px;
+    padding:25px;
+    background:#140a0a;
+    border-radius:10px;
+    font-weight: bold;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #D4AF37;
+}
+.footer{
+    background:black;
+    color:#D4AF37;
+    padding:40px 60px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+/* Brand Section */
+.footer-brand{
+    width:30%;
+}
+
+.footer-logo{
+    width:120px;
+    margin-bottom:10px;
+}
+
+.footer-brand p{
+    color:#ccc;
+    font-size:14px;
+}
+
+/* Gallery Section */
+.footer-gallery{
+    width:30%;
+}
+
+.gallery{
+    display:flex;                 /* Flex instead of grid */
+    gap:10px;
+    
+}
+
+.gallery img{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+}
+
+/* Session Section */
+.footer-session{
+    width:30%;
+    text-align:left;
+}
+
+.footer-session h4{
+    font-size:22px;
+    margin-bottom:15px;
+    color:white;
+}
+
+.session-card{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.trainer-img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.session-info p{
+    font-size:16px;
+    color:#ccc;
+    margin:4px 0;
+}
+
+.session-name{
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+}
+
+.tin{
+    display:inline-block;
+    background: goldenrod;
+    color: white;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    margin-top: 8px;
+    transition: 0.3s ease;
+}
+
+.tin:hover{
+    background:#d4a017;
+    transform:scale(1.05);
+}
+
+/* Story */
+.about-section{
+    padding: 80px 10%;
+    background-color: #541515;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about-image{
+    flex: 1;
+}
+
+.about-image img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    margin-left: 20px;
+}
+
+.about-content{
+    flex: 1;
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-content h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: goldenrod;
+}
+
+.about-content p{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color:#faf0be;
+}
+
+.mission-vision-section{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 10%;
+    background-color: #e6be8a;
+    flex-wrap: wrap;
+}
+.sec-title{
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    color: #111;
+    position: relative;
+}
+
+.mv-box{
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+.mv-box{
+    background: black;
+    padding: 30px;
+    border-radius: 20px;
+    width: 450px;
+}
+
+.mv-box:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(10, 10, 10, 0.912);
+}
+
+.mv-box img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.mv-box h2{
+    font-size: 32px;
+    color: #b8860b;
+    margin-bottom: 20px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.mv-box p{
+    font-size: 18px;
+    color: #f8de7e;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+/* Why Us */
+.why-us{
+    padding: 80px 10%;
+    background: #111;
+    color: #fff;
+}
+
+.why-title{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 60px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.why-row{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+
+.why-img{
+    flex: 1;
+    min-width: 300px;
+}
+
+.why-img img{
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.why-text{
+    flex: 1;
+}
+
+.why-text h3{
+    color: goldenrod;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.why-text p{
+    font-size: 23px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* CTA */
+.cta{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.button{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    background:goldenrod;
+    color:#000;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.button:hover{
+    background:#000;
+    color:#fff;
+}
+
+.sessions-page{
+    padding:60px 8%;
+    background:#bc8f8f;
+}
+
+.session-box{
+    background:#111;
+    color:#0d0d0b;
+}
+
+.section-title{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    color: #0d0d0d;
+    margin: 30px;
+}
+
+.session-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.session-box{
+    width:295px;
+    background:#111;  
+    color:#f8de7e;    
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.session-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.session-box img{
+    width:200px;
+    height:200px;
+    border-radius:40px;
+    margin-bottom:15px;
+}
+
+.session-box h3{
+    font-size:18px;
+    margin-bottom:8px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.session-box p{
+    font-size:14px;
+    color:#ccc;
+    margin:4px 0;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.completed-tag{
+    display:inline-block;
+    margin-top:10px;
+    padding:6px 12px;
+    background:#d11515;
+    border-radius:20px;
+    font-size:12px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.join-btn{
+    display:inline-block;
+    margin-top:12px;
+    padding:8px 18px;
+    background:#32cd32;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    font-size:14px;
+    transition:0.3s;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.join-btn:hover{
+    background:#d4a017;
+    transform:scale(1.05);
+}
+.page-title{
+    text-align:center;
+    padding:40px 0;
+    font-size:40px;
+    color:#111;
+}
+
+.products-section{
+    padding:60px 8%;
+    background:#0b0b0b;
+    display:flex;
+    flex-wrap: wrap;
+    
+    justify-content:center;
+    gap:30px;
+}
+
+
+.product-box{
+    width:400px;
+    background:#111;
+    color:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.product-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(131, 140, 48, 0.842);
+}
+
+/* IMAGE */
+.product-box img{
+    width:100%;
+    border-radius:10px;
+}
+
+.product-box:hover img{
+    background-color: #b78727b2;
+    transform: translateY(-5px);
+}
+
+/* TEXT */
+.product-box h3{
+    margin:15px 0;
+    font-size:20px;
+}
+
+.product-box p{
+    font-size:14px;
+    margin-bottom:15px;
+    color:#ccc;
+}
+
+.product-box h4{
+    font-size:18px;
+    margin-bottom:15px;
+    color:#e74c3c;
+}
+
+/* BUTTON */
+.product-box button{
+    background:#e74c3c;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.product-box button:hover{
+    background:#a0bd11;
+}
+
+/* SECTION */
+.contact-section{
+    padding:60px 8%;
+    background-color: #b78727;
+}
+
+.contact-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#111;
+}
+
+/* FLEX CONTAINER */
+.contact-container{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+/* CONTACT INFO */
+.contact-info{
+    width:350px;
+    background:#111;
+    color:#f8de7e;
+    padding:50px;
+    border-radius:15px;
+}
+
+.contact-info h2{
+    margin-bottom:20px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.contact-info p{
+    margin:10px 0;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+
+/* CONTACT FORM */
+.contact-form{
+    width:400px;
+    background:#111;
+    padding:30px;
+    border-radius:15px;
+}
+
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:14px;
+}
+
+.contact-form button{
+    padding:12px;
+    background:rgb(34, 15, 103);
+    border:none;
+    border-radius:8px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    background:#d4a017;
+}
