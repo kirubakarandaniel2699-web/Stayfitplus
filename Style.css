@@ -411,11 +411,9 @@
     gap: 40px;
     margin-bottom: 30px;
     flex-wrap: wrap;
-}
-
-.why-row:nth-child(even){
     flex-direction: row-reverse;
 }
+
 
 .why-img{
     flex: 1;
@@ -473,16 +471,12 @@
     background:#bc8f8f;
 }
 
-.session-box{
-    background:#111;
-    color:#0d0d0b;
-}
-
 .section-title{
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 28px;
-    color: #0d0d0d;
-    margin: 30px;
+    font-family:Calibri, 'Trebuchet MS', sans-serif;
+    font-size:28px;
+    color:#0d0d0d;
+    margin:30px 0;
+    text-align:center;
 }
 
 .session-container{
@@ -494,8 +488,8 @@
 
 .session-box{
     width:295px;
-    background:#111;  
-    color:#f8de7e;    
+    background:#111;
+    color:#f8de7e;
     padding:20px;
     border-radius:15px;
     text-align:center;
@@ -510,6 +504,7 @@
 .session-box img{
     width:200px;
     height:200px;
+    object-fit:cover;
     border-radius:40px;
     margin-bottom:15px;
 }
@@ -517,14 +512,14 @@
 .session-box h3{
     font-size:18px;
     margin-bottom:8px;
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-family:Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .session-box p{
     font-size:14px;
     color:#ccc;
     margin:4px 0;
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-family:Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .completed-tag{
@@ -533,11 +528,23 @@
     padding:6px 12px;
     background:#d11515;
     border-radius:20px;
-    font-size:12px;
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size:16px;
+    color:white;
 }
 
+.completed-btn{
+    margin-top:10px;
+    padding:8px 20px;
+    background:#cbcb17;
+    border-radius:100px;
+    font-size:16px;
+    border:3px solid black;
+    cursor:pointer;
+}
+
+.completed-btn:hover{
+    background:#f0e68c;
+}
 
 .join-btn{
     display:inline-block;
@@ -547,16 +554,15 @@
     color:white;
     text-decoration:none;
     border-radius:25px;
-    font-size:14px;
+    font-size:16px;
     transition:0.3s;
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
 }
 
 .join-btn:hover{
     background:#d4a017;
     transform:scale(1.05);
 }
+
 .page-title{
     text-align:center;
     padding:40px 0;
@@ -714,6 +720,4 @@
 
 .contact-form button:hover{
     background:#d4a017;
-
 }
-
