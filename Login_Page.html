@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers Page</title>
+<link rel="stylesheet" href="Carstyle.css">
+</head>
+
+<body>
+        <div class="topbar">
+            <a href="Sessions.html">
+            <button class="backbtn">
+                <i class="fa-solid fa-arrow-left"></i> Back to Login
+            </button>
+            </a>
+        </div>
+
+<section class="start">
+<center>
+<img src="Images/Updated Logo.png" alt="Company logo">
+<h1>Candidate Login</h1>
+
+<form>
+<fieldset class="userdet">
+<label>UserName:</label>
+<input id="lab1" type="text" placeholder="EmailID/Mobile Number" required><br>
+<label>Password:</label>
+<input id="lab2" type="password" placeholder="4 Digit Number" required><br>
+<button type="button" id="result" onclick="login()">
+    <i class="fa-solid fa-right-to-bracket"></i> Login
+</button><br>
+<p id="message"></p>
+</fieldset>
+</form>
+</center>
+
+</section>
+
+
+<script>
+
+var field1 = document.getElementById("lab1")
+var field2 = document.getElementById("lab2")
+var msg = document.getElementById("message")
+
+function login()
+{
+    var lab1 = field1.value
+    var lab2 = field2.value
+
+    if(lab1 == "admin" && lab2 == "1234")
+    {
+        window.location = "otp.html";
+    }
+    else
+    {
+        msg.innerHTML = "Invalid Username or Password";
+    }
+}
+
+</script>
+
+</body>
+</html>

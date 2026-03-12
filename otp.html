@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OTP Verification</title>
+<link rel="stylesheet" href="Carstyle.css">
+</head>
+<body>
+<center><h1 style="color:#f0e68c;">OTP Verification</h1></center>
+
+<div class="otpbox">
+<label>Enter OTP</label><br>
+<input id="otpinput" type="text" placeholder="Enter OTP"><br><br>
+<button onclick="verify()">
+<i class="fa-solid fa-shield-halved"></i> Verify
+</button>
+<p id="msg"></p>
+
+</div>
+
+</center>
+
+<script>
+    var otp = document.getElementById("otpinput")
+    var message = document.getElementById("msg")
+
+function verify()
+{
+    var userotp = otp.value
+
+    if(userotp == "1234")
+    {
+        message.innerHTML = "OTP Verified Successfully"
+
+        window.location = "Session_page.html"
+    }
+    else
+    {
+        message.innerHTML = "Invalid OTP"
+    }
+}
+</script>
+
+</body>
+</html>
